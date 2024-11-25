@@ -4,3 +4,17 @@
 table {
   width: 100%;
 }
+mat-table {
+  width: 100%; /* Ajusta el ancho según sea necesario */
+  border-collapse: collapse;
+}
+
+mat-header-row {
+  background-color: #c2421b;
+  font-weight: bold;
+}
+
+mat-cell {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}

@@ -1,1 +1,92 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+#titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  color: #ffffff;
+  text-align:   
+ center;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+  }
+  
+  /* Toolbar Styles */
+  mat-toolbar {
+    background-color: #e86638;
+    color: white;
+  }
+  
+  mat-toolbar-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Sidenav Styles */
+  mat-sidenav {
+    background-color: #212121;
+    color: white;
+  }
+  
+  mat-list-item {
+    color: white;
+    padding: 32px 32px;
+  }
+  
+  mat-list-item:hover {
+    background-color: #4e180b;
+    color: white;
+  }
+  
+  mat-icon {
+    color: white;
+    font-size: 24px; /* Increase icon size */
+    margin-right: 10px; /* Add margin for spacing */
+  }
+  
+  /* Sidenav Content Styles */
+  mat-sidenav-content {
+    padding: 20px;
+  }
+  
+
+
+  mat-nav-list {
+    font-size: 1.2em; /* Increase font size */
+  }
+  .my-custom-icon {
+    color: #e86638; /* Cambia el color por el que quieras */
+  }
+ 
+  #navtext {
+    /* Propiedades para personalizar el texto */
+    font-family: 'Roboto', sans-serif; /* Puedes cambiar a la fuente que prefieras */
+    font-size: 1.2rem;
+    color: #ffffff;
+    /* Propiedades para el espaciado */
+    margin-left: 10px; /* Ajusta el margen izquierdo según sea necesario */
+    /* Propiedades para efectos hover */
+    transition: all 0.3s ease;
+    &:hover {
+      color: #e86638;
+      cursor: pointer;
+    }
+  }
