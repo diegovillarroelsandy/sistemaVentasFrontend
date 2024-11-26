@@ -12,6 +12,7 @@ import { ModalUsuarioComponent } from './Modales/modal-usuario/modal-usuario.com
 import { SharedModule } from '../../Reutilizable/shared/shared.module';
 import { ModalProductoComponent } from './Modales/modal-producto/modal-producto.component';
 import { ModalDetalleVentaComponent } from './Modales/modal-detalle-venta/modal-detalle-venta.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,6 @@ import { ModalDetalleVentaComponent } from './Modales/modal-detalle-venta/modal-
     ModalProductoComponent,
     ModalDetalleVentaComponent,
   ],
-  imports: [CommonModule, LayoutRoutingModule, SharedModule],
+  imports: [CommonModule, LayoutRoutingModule, SharedModule, RouterModule ],
 })
 export class LayoutModule {}

@@ -9582,4 +9582,31 @@
       transform: translateY(-15px);
     }
   }
-  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #ff6600;
+    border: 2px solid #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff6600;
+    color: #000;
+    transform: scale(1.1);
+}
+.footer {
+  position: fixed; /* Posiciona el pie de página de forma fija */
+  bottom: 0; /* Lo coloca en la parte inferior de la página */
+  left: 0; /* Lo alinea a la izquierda */
+  width: 100%; /* Ocupa todo el ancho de la pantalla */
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ff6600;
+}

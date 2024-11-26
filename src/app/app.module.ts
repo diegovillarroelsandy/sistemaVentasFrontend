@@ -12,6 +12,7 @@ import { LayoutComponent } from './Components/layout/layout.component';
 import { SharedModule } from './Reutilizable/shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { provideHttpClient, withFetch } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [AppComponent, LoginComponent, LayoutComponent],
@@ -20,6 +21,7 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
     AppRoutingModule,
     SharedModule,
     BrowserAnimationsModule,
+    RouterModule
   ],
   providers: [
     provideClientHydration(),

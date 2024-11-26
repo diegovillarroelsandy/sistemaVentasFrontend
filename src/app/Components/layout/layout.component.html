@@ -3,15 +3,19 @@
     <button mat-icon-button (click)="sidenav.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
-    <h1 id="titulo">AUXLA</h1>
+    <h1 id="titulo">AUXREAL</h1>
   </mat-toolbar-row>
 </mat-toolbar>
 <mat-sidenav-container>
   <mat-sidenav #sidenav opened="true" mode="side" style="width: 200px">
     <mat-nav-list>
+      <mat-list-item routerLink="/pages/landingpage">
+        <mat-icon class="my-custom-icon" mat-list-icon>account_balance</mat-icon>
+        <div id="navtext" mat-line>Landingpage</div>
+      </mat-list-item>
       <mat-list-item routerLink="/pages/dashboard">
         <mat-icon class="my-custom-icon" mat-list-icon>dashboard</mat-icon>
-        <div  id="navtext" mat-line>Inicio</div>
+        <div  id="navtext" mat-line>Productos</div>
       </mat-list-item>
       <mat-list-item routerLink="/pages/usuarios">
         <mat-icon class="my-custom-icon" mat-list-icon>group</mat-icon>
@@ -19,7 +23,7 @@
       </mat-list-item>
       <mat-list-item routerLink="/pages/productos">
         <mat-icon class="my-custom-icon" mat-list-icon>collections_bookmark</mat-icon>
-        <div id="navtext" mat-line>Articulos</div>
+        <div id="navtext" mat-line>Inventario</div>
       </mat-list-item>
       <mat-list-item routerLink="/pages/venta">
         <mat-icon class="my-custom-icon" mat-list-icon>currency_exchange</mat-icon>
