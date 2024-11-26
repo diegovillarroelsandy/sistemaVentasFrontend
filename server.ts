@@ -43,7 +43,7 @@ export function app(): express.Express {
 
   return server;
 }
-
+//function to run the app
 function run(): void {
   const port = process.env['PORT'] || 4000;
 
